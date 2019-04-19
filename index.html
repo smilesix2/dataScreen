@@ -1,0 +1,211 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="云盈">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-store">
+    <title>用户登录</title>
+    <title></title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+
+    </style>
+</head>
+
+<body style="overflow:hidden;">
+    <div id="container">
+        <div class="tophalf">
+            <p>云盈网络大数据平台</p>
+            <p>
+                <span>2018年08月21日</span>
+                <span>周二</span>
+            </p>
+            <img class="return" src="images/return.png" alt="">
+            <img class="username" src="images/username.png" alt="">
+        </div>
+        <div class="bottomhalf">
+            <div class="col-sm-3">
+                <div class="block">
+                    <div class="title">设备在线情况</div>
+                    <div class="headline">
+                        <p><span>昨日设备在线(台)：</span><span>5056</span></p>
+                        <p><span>今日设备在线(台)：</span><span>999</span></p>
+                    </div>
+                    <div id="equipment"></div>
+                </div>
+                <div class="block">
+                    <div class="title">终端认证情况</div>
+                    <div class="headline">
+                        <p><span>昨日认证(次)：</span><span>5056</span></p>
+                        <p><span>今日认证(次)：</span><span>999</span></p>
+                    </div>
+                    <div id="terminal"></div>
+                </div>
+                <div class="block">
+                    <div class="title">上网人数分布</div>
+                    <div class="headline">
+                        <p><span>昨日人次：</span><span>5056</span></p>
+                        <p><span>今日人次：</span><span>999</span></p>
+                    </div>
+                    <div id="internetbar"></div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="leftpart">
+                    <div class="numequip">
+                        <p>设备总量:</p>
+                        <div id="itemNumber">
+                            <div>1</div>
+                            <div>3</div>
+                            <div>2</div>
+                            <div>4</div>
+                            <div>1</div>
+                            <div>0</div>
+                        </div>
+                        <p>台</p>
+                    </div>
+                    <div class="areapart">
+                        <div class="areatitle">
+                            <div class="areablock">
+                                <img src="images/online.png" alt="">
+                                <p>在线终端</p>
+                                <p style="color:#055ceb;">5355</p>
+                            </div>
+                            <div class="areablock">
+                                <img src="images/confirm.png" alt="">
+                                <p>认证总数</p>
+                                <p style="color:#70dc2e;">2153</p>
+                            </div>
+                            <div class="areablock">
+                                <img src="images/alert.png" alt="">
+                                <p>告警设备</p>
+                                <p style="color:#e93b51;">2153</p>
+                            </div>
+                        </div>
+                        <div id="main"></div>
+                    </div>
+                    <div class="downpart">
+                        <div class="titleequip">设备列表</div>
+                        <p><span class="timechange index">全年</span><span class="timechange">半年</span><span class="timechange">近三月</span></p>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>设备数</th>
+                                    <th>在线数</th>
+                                    <th>活跃数</th>
+                                    <th>安装数</th>
+                                    <th>在线率</th>
+                                    <th>安装率</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>全部</td>
+                                    <td>5132132</td>
+                                    <td>6656</td>
+                                    <td>6656</td>
+                                    <td>6656</td>
+                                    <td>50%</td>
+                                    <td>50%</td>
+                                </tr>
+                                <tr>
+                                    <td>任子行</td>
+                                    <td>5132132</td>
+                                    <td>6656</td>
+                                    <td>6656</td>
+                                    <td>6656</td>
+                                    <td>50%</td>
+                                    <td>50%</td>
+                                </tr>
+                                <tr>
+                                    <td>云盈</td>
+                                    <td>5132132</td>
+                                    <td>6656</td>
+                                    <td>6656</td>
+                                    <td>6656</td>
+                                    <td>50%</td>
+                                    <td>50%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3" style="float:right;">
+                <div class="rightpart">
+                    <div class="lump">
+                        <div class="title">设备告警情况</div>
+                        <div class="headline">
+                            <p><span>今日警告：</span><span>10</span></p>
+                            <p><span>告警解决数：</span><span>999</span></p>
+                        </div>
+                        <div id="internetpie"></div>
+                    </div>
+                    <div class="lumpone">
+                        <div class="title">运营情况</div>
+                        <div class="headline">
+                            <p><span>总上网人数：</span><span>5355</span></p>
+                            <p><span>离线人数：</span><span>535</span></p>
+                            <p><span>认证成功数：</span><span>999</span></p>
+                        </div>
+                        <div class="perform">
+                            <div id="excellent"></div>
+                            <p>优</p>
+                        </div>
+                        <div class="percent">
+                            <div class="opration">
+                                <div id="success"></div>
+                                <p>认证成功率</p>
+                            </div>
+                            <div class="opration">
+                                <div id="online"></div>
+                                <p>在线率</p>
+                            </div>
+                            <div class="opration">
+                                <div id="offline"></div>
+                                <p>离线率</p>
+                            </div>
+                            <div class="opration">
+                                <div id="alert"></div>
+                                <p>告警率</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lumptwo">
+                        <div class="title">短信发送情况</div>
+                        <div class="headline">
+                            <p><span>昨日认证(次)：</span><span>5056</span></p>
+                            <p><span>今日认证(次)：</span><span>999</span></p>
+                        </div>
+                        <div id="message"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../static/jquery/jquery-3.3.1.min.js"></script>
+    <script src="../static/bootstrap/3.3.4/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="../static/iCheck/icheck.min.js"></script>
+    <script src="../static/iCheck/icheck-init.js"></script>
+    <script src="../static/layer-v2.0/layer/layer.js"></script>
+    <script src="../js/portalplus.js"></script>
+    <script src="../js/cloudwinner.js"></script>
+    <script src="../static/chosen/chosen.jquery.js"></script>
+    <script src="../js/select.js"></script>
+    <script src="../js/button.js"></script>
+    <script src="../static/layer-v2.0/layer/laydate/laydate.js"></script>
+    <script src="../static/daterangepicker/moment.js"></script>
+    <script src="../static/daterangepicker/daterangepicker.js"></script>
+    <script src="../js/echarts.mins.js"></script>
+    <script src="china.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

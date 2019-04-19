@@ -1,0 +1,729 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: lcd;
+    src: url('lcd.ttf') format('truetype');
+    /* Safari, Android, iOS */
+}
+
+.tophalf {
+    background: url(images/toptitle.png) no-repeat;
+    width: 100%;
+    height: 122px;
+    position: relative;
+    background-size: 100% 100%;
+}
+
+#container {
+    background-color: #0b1a4a;
+    width: 100%;
+    height: 1090px;
+    overflow-y: hidden;
+}
+
+.tophalf p:nth-child(1) {
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.tophalf p:nth-child(2) {
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.return {
+    position: absolute;
+    top: 22px;
+    right: 30px;
+    cursor: pointer;
+}
+
+.username {
+    position: absolute;
+    top: 20px;
+    right: 100px;
+    cursor: pointer;
+}
+
+.col-sm-3 {
+    width: 25%;
+    float: left;
+    margin-left: 23px;
+    margin-right: 23px;
+}
+
+.col-sm-6 {
+    width: 45%;
+    float: left;
+    margin-left: 2px;
+}
+
+.block {
+    width: 100%;
+    height: 289px;
+    border: 1px solid #5487c8;
+    margin-bottom: 32px;
+    position: relative;
+    border-radius: 4px;
+}
+
+.title {
+    position: absolute;
+    height: 43px;
+    background: url(images/littletitle.png) no-repeat;
+    width: 158px;
+    left: 160px;
+    top: -23px;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    line-height: 43px;
+}
+
+.headline p>span:nth-child(1) {
+    font-size: 14px;
+    color: #fff;
+}
+
+.headline p>span:nth-child(2) {
+    font-size: 14px;
+    color: #639efd;
+}
+
+.headline {
+    position: absolute;
+    top: 25px;
+    left: 10px;
+}
+
+#equipment {
+    height: 280px;
+    margin-top: 30px;
+}
+
+#terminal {
+    height: 280px;
+    margin-top: 30px;
+}
+
+#internetbar {
+    height: 280px;
+    margin-top: 30px;
+}
+
+#internetpie {
+    height: 280px;
+    margin-top: 30px;
+}
+
+.leftpart {
+    width: 100%;
+    float: left;
+}
+
+.rightpart {
+    width: 100%;
+    float: left;
+}
+
+#itemNumber>div {
+    width: 82px;
+    height: 110px;
+    float: left;
+    color: #F2F2F2;
+    text-align: center;
+    line-height: 110px;
+    font-size: 66px;
+    margin-left: 15px;
+    background: url(images/numblock.png) no-repeat;
+    font-family: lcd;
+}
+
+.numequip p {
+    font-size: 20px;
+    color: #fff;
+    float: left;
+    margin-top: 80px;
+    margin-left: 20px;
+}
+
+.numequip {
+    margin-top: 42px;
+    height: 120px;
+    margin-left: 40px;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+.areapart {
+    width: 100%;
+    height: 530px;
+    background: url(images/areablock.png) no-repeat;
+    background-size: 100% 100%;
+    margin-bottom: 21px;
+    position: relative;
+}
+
+.lump {
+    width: 100%;
+    height: 289px;
+    border: 1px solid #5487c8;
+    margin-bottom: 32px;
+    position: relative;
+    border-radius: 4px;
+}
+
+.lumpone {
+    width: 100%;
+    height: 362px;
+    border: 1px solid #5487c8;
+    margin-bottom: 32px;
+    position: relative;
+    border-radius: 4px;
+}
+
+.lumptwo {
+    width: 100%;
+    height: 216px;
+    border: 1px solid #5487c8;
+    margin-bottom: 32px;
+    position: relative;
+    border-radius: 4px;
+}
+
+.downpart {
+    width: 100%;
+    height: 217px;
+    border: 1px solid #5487c8;
+    border-radius: 4px;
+    float: left;
+    position: relative;
+}
+
+.titleequip {
+    position: absolute;
+    height: 43px;
+    background: url(images/equip.png) no-repeat;
+    width: 132px;
+    left: 360px;
+    top: -23px;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    line-height: 43px;
+}
+
+.downpart p {
+    float: right;
+    margin-top: 10px;
+}
+
+.downpart p span {
+    font-size: 14px;
+    color: #2158bd;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.table thead>tr {
+    border-bottom: 1px solid #fff
+}
+
+.table tbody>tr {
+    border-bottom: 1px solid #fff
+}
+
+.table tbody>tr:nth-child(3) {
+    border-bottom: none;
+}
+
+.table thead th {
+    font-size: 14px;
+    color: #639efd;
+}
+
+.table tbody td {
+    font-size: 14px;
+    color: #fff;
+}
+
+.table {
+    width: 800px;
+    min-height: 38px;
+    line-height: 38px;
+    text-align: center;
+    margin-top: 50px;
+    border-collapse: collapse;
+    margin-left: 35px;
+}
+
+.downpart p .index {
+    border-bottom: 1px solid #639efd;
+    padding-bottom: 4px;
+    color: #639efd;
+}
+
+.opration {
+    width: 25%;
+    float: left;
+}
+
+.opration p {
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+}
+
+.opration div {
+    height: 120px;
+    position: relative;
+}
+
+#dataPlay {
+    position: absolute;
+    top: 63%;
+    left: 60%;
+    margin-top: -25px;
+    margin-left: -25px;
+    color: #fff;
+    font-size: 14px;
+}
+
+#datanum {
+    position: absolute;
+    top: 55%;
+    left: 52%;
+    margin-top: -25px;
+    margin-left: -25px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.perform div {
+    height: 250px;
+    position: relative;
+}
+
+.perform p {
+    position: absolute;
+    color: #fff;
+    right: 145px;
+    bottom: 170px;
+}
+
+.areatitle {
+    position: absolute;
+}
+
+.areatitle div {
+    float: left;
+    margin-left: 40px;
+    margin-top: 16px;
+}
+
+.areablock img {
+    float: left;
+    margin-top: 4px;
+    margin-right: 5px;
+}
+
+.areablock>p {
+    font-size: 14px;
+    color: #fff;
+    float: left;
+    margin-right: 15px;
+}
+
+#main {
+    height: 530px;
+}
+
+.perform {
+    height: 200px;
+}
+
+.percent {
+    height: 150px;
+}
+
+#message {
+    height: 200px;
+}
+
+@media only screen and (min-device-width: 1360px) and ( max-device-width:1440px) {
+    .tophalf {
+        background: url(images/mintitle.png) no-repeat;
+        width: 100%;
+        height: 80px;
+        position: relative;
+        background-size: 100% 100%;
+    }
+    .col-sm-6 {
+        margin-left: 0px;
+    }
+    .col-sm-3 {
+        margin-left: 18px;
+        margin-right: 18px;
+    }
+    .tophalf p:nth-child(1) {
+        font-size: 30px;
+        padding-top: 10px;
+    }
+    .tophalf p:nth-child(2) {
+        font-size: 14px;
+    }
+    .username {
+        width: 30px;
+        top: 12px;
+        right: 80px;
+    }
+    .return {
+        width: 30px;
+        top: 12px;
+    }
+    .block {
+        width: 100%;
+        height: 216px;
+        margin-bottom: 20px;
+    }
+    .headline p>span:nth-child(1) {
+        font-size: 12px;
+    }
+    .headline p>span:nth-child(2) {
+        font-size: 12px;
+    }
+    .title {
+        font-size: 14px;
+        height: 30px;
+        width: 120px;
+        background-size: 100% 100%;
+        left: 120px;
+        top: -16px;
+        line-height: 30px;
+    }
+    .headline {
+        top: 15px;
+    }
+    #equipment {
+        height: 240px;
+        margin-top: 15px;
+    }
+    #terminal {
+        height: 240px;
+        margin-top: 15px;
+    }
+    #internetbar {
+        height: 240px;
+        margin-top: 15px;
+    }
+    #internetpie {
+        height: 240px;
+        margin-top: 15px;
+    }
+    .numequip p {
+        font-size: 15px;
+    }
+    #itemNumber>div {
+        height: 73px;
+        width: 53px;
+        background-size: 100% 100%;
+        line-height: 73px;
+        font-size: 50px;
+    }
+    .numequip {
+        margin-top: 27px;
+        height: 85px;
+    }
+    .numequip p {
+        margin-top: 55px;
+        margin-left: 10px;
+    }
+    .areapart {
+        width: 100%;
+        height: 397px;
+        margin-bottom: 14px
+    }
+    #main {
+        height: 397px;
+    }
+    .lump {
+        width: 100%;
+        height: 226px;
+        margin-bottom: 20px;
+    }
+    .lumpone {
+        width: 100%;
+        height: 262px;
+        margin-bottom: 20px;
+    }
+    .lumptwo {
+        width: 100%;
+        height: 160px;
+    }
+    .downpart {
+        width: 100%;
+        height: 164px;
+    }
+    .titleequip {
+        height: 30px;
+        font-size: 14px;
+        line-height: 30px;
+        width: 110px;
+        background-size: 100% 100%;
+        top: -16px;
+        left: 260px;
+    }
+    .downpart p span {
+        font-size: 12px;
+    }
+    .table {
+        width: 590px;
+        line-height: 25px;
+        margin-left: 30px;
+    }
+    .table thead th {
+        font-size: 12px;
+    }
+    .table tbody td {
+        font-size: 12px;
+    }
+    .perform {
+        height: 150px;
+    }
+    .percent {
+        height: 100px;
+    }
+    .perform div {
+        height: 200px;
+    }
+    .opration p {
+        font-size: 12px;
+    }
+    .opration div {
+        height: 90px;
+        position: relative;
+    }
+    .perform p {
+        right: 110px;
+        bottom: 110px;
+    }
+    #dataPlay {
+        top: 68%;
+        left: 65%;
+        font-size: 12px;
+    }
+    #datanum {
+        top: 58%;
+        left: 54%;
+        font-size: 14px;
+    }
+    #message {
+        height: 160px;
+    }
+    .areablock>p {
+        font-size: 12px;
+        margin-right: 10px;
+    }
+    .areablock img {
+        margin-top: 2px;
+    }
+    .areatitle div {
+        margin-left: 20px;
+    }
+    .tophalf p:nth-child(2) {
+        margin-top: 5px;
+    }
+}
+
+@media only screen and (min-device-width: 1441px) and ( max-device-width:1919px) {
+    .tophalf {
+        background: url(images/maxtitle.png) no-repeat;
+        width: 100%;
+        height: 80px;
+        position: relative;
+        background-size: 100% 100%;
+    }
+    .col-sm-6 {
+        margin-left: 0px;
+    }
+    .col-sm-3 {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .tophalf p:nth-child(1) {
+        font-size: 30px;
+        padding-top: 10px;
+    }
+    .tophalf p:nth-child(2) {
+        font-size: 14px;
+    }
+    .username {
+        width: 30px;
+        top: 12px;
+        right: 80px;
+    }
+    .return {
+        width: 30px;
+        top: 12px;
+    }
+    .block {
+        width: 100%;
+        height: 216px;
+        margin-bottom: 20px;
+    }
+    .headline p>span:nth-child(1) {
+        font-size: 12px;
+    }
+    .headline p>span:nth-child(2) {
+        font-size: 12px;
+    }
+    .title {
+        font-size: 14px;
+        height: 30px;
+        width: 120px;
+        background-size: 100% 100%;
+        left: 120px;
+        top: -16px;
+        line-height: 30px;
+    }
+    .headline {
+        top: 15px;
+    }
+    #equipment {
+        height: 240px;
+        margin-top: 15px;
+    }
+    #terminal {
+        height: 240px;
+        margin-top: 15px;
+    }
+    #internetbar {
+        height: 240px;
+        margin-top: 15px;
+    }
+    #internetpie {
+        height: 240px;
+        margin-top: 15px;
+    }
+    .numequip p {
+        font-size: 15px;
+    }
+    #itemNumber>div {
+        height: 73px;
+        width: 53px;
+        background-size: 100% 100%;
+        line-height: 73px;
+        font-size: 50px;
+    }
+    .numequip {
+        margin-top: 27px;
+        height: 85px;
+        margin-left: 60px;
+    }
+    .numequip p {
+        margin-top: 55px;
+        margin-left: 10px;
+    }
+    .areapart {
+        width: 100%;
+        height: 397px;
+        margin-bottom: 14px
+    }
+    #main {
+        height: 397px;
+    }
+    .lump {
+        width: 100%;
+        height: 226px;
+        margin-bottom: 20px;
+    }
+    .lumpone {
+        width: 100%;
+        height: 262px;
+        margin-bottom: 20px;
+    }
+    .lumptwo {
+        width: 100%;
+        height: 160px;
+    }
+    .downpart {
+        width: 100%;
+        height: 164px;
+    }
+    .titleequip {
+        height: 30px;
+        font-size: 14px;
+        line-height: 30px;
+        width: 110px;
+        background-size: 100% 100%;
+        top: -16px;
+        left: 260px;
+    }
+    .downpart p span {
+        font-size: 12px;
+    }
+    .table {
+        width: 670px;
+        line-height: 25px;
+        margin-left: 20px;
+    }
+    .table thead th {
+        font-size: 12px;
+    }
+    .table tbody td {
+        font-size: 12px;
+    }
+    .perform {
+        height: 150px;
+    }
+    .percent {
+        height: 100px;
+    }
+    .perform div {
+        height: 200px;
+    }
+    .opration p {
+        font-size: 12px;
+    }
+    .opration div {
+        height: 90px;
+        position: relative;
+    }
+    .perform p {
+        right: 110px;
+        bottom: 110px;
+    }
+    #dataPlay {
+        top: 68%;
+        left: 65%;
+        font-size: 12px;
+    }
+    #datanum {
+        top: 58%;
+        left: 54%;
+        font-size: 14px;
+    }
+    #message {
+        height: 160px;
+    }
+    .areablock>p {
+        font-size: 12px;
+        margin-right: 10px;
+    }
+    .areablock img {
+        margin-top: 2px;
+    }
+    .areatitle div {
+        margin-left: 20px;
+    }
+    .tophalf p:nth-child(2) {
+        margin-top: 5px;
+    }
+}
